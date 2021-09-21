@@ -89,3 +89,18 @@ body {
 .card5 {
   grid-area: card5;
 }
+
+@media screen and (max-width: 414px) {
+  .container {
+    grid-template-areas:
+      'card1'
+      'card2'
+      'card3'
+      'card4'
+      'card5';
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    margin: 70px 30px;
+  }
+}
